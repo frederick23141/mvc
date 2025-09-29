@@ -4,14 +4,10 @@
 require_once '../autolader.php';
 
 use Lib\Route;
+use App\Controllers\HomeController;
 
 
-Route::get('/',function(){
-    return [
-        'title' => 'Home',
-        'content' => 'Hola desde la pagina de inicio'
-    ];
-});
+Route::get('/',[HomeController::class, 'index']);
 
 Route::get('/contact',function(){
     echo "hola desde la pagina contacto";
