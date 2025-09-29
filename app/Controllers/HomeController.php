@@ -1,8 +1,9 @@
 <?php 
 
 namespace App\Controllers;
-class HomeController{
+class HomeController extends Controller{
     public function index(){
-        return "hola desde la pagina principal controller";
+        return $this->view('home');
     }
+
 }
