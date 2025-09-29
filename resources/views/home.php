@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Hola, esta ya es la vista del home</h1>
+    <p> Titulo <?= $title ?>  </p>
 </body>
 </html>

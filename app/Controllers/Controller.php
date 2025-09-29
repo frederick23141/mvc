@@ -3,7 +3,11 @@
 namespace App\Controllers;
 class Controller {
     
-    public function view($route){
+    public function view($route, $data=[]){
+
+
+        extract($data);
+/*         return $title; */
 
         $route = str_replace('.','/', $route);
         
